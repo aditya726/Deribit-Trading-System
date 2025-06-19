@@ -1,0 +1,22 @@
+//I am using vcpkg to install the required libraries and dependancies
+
+Cmake build :  1)cmake -B build -DCMAKE_TOOLCHAIN_FILE=[path-to-vcpkg]/scripts/buildsystems/vcpkg.cmake
+	           2)cmake --build build --config Release
+
+Run the project : // go to your build folder from the project directory using
+				   1)cd build 
+				   //you can also do ./release/[project-name].exe do directly run from build folder.
+				   2)cd release
+				   3)./[Project-Name].exe
+
+
+// Requirements : 
+	1) Install vcpkg
+	2) CMake
+	3) Visual Studio
+	4) WebSocket++ (with ASIO support)
+	5) nlohmann/json
+	6) Boost libraries (ASIO, system, etc.)
+	7) OpenSSL(With certificate and private_key)//In .pem format
+
+		
